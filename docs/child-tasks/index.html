@@ -1,18 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>ember-concurrency</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     
-<meta name="dummy/config/environment" content="%7B%22modulePrefix%22%3A%22dummy%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-concurrency%22%2C%22version%22%3A%223.1.1%2B90cca1ec%22%7D%2C%22fastboot%22%3A%7B%22hostWhitelist%22%3A%5B%7B%7D%2C%22ember-concurrency.com%22%5D%7D%7D" />
+<meta name="test-app/config/environment" content="%7B%22modulePrefix%22%3A%22test-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22test-app%22%2C%22version%22%3A%220.0.0%2Bce0b142d%22%7D%2C%22emberConcurrencyVersion%22%3A%224.0.2%22%2C%22fastboot%22%3A%7B%22hostWhitelist%22%3A%5B%7B%7D%2C%22ember-concurrency.com%22%5D%7D%7D" />
 <!-- EMBER_CLI_FASTBOOT_TITLE -->
 
-    <link integrity="" rel="stylesheet" href="/assets/vendor-10d8eaf9101947f2130df71856c61a0b.css">
-    <link integrity="" rel="stylesheet" href="/assets/dummy-76a6a77059a24a3f590c4ba242acb117.css">
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    <link integrity="" rel="stylesheet" href="/assets/vendor-10d8eaf9101947f2130df71856c61a0b.css" />
+    <link integrity="" rel="stylesheet" href="/assets/test-app-0fb4f0511a8574d83c92a722b1036d1f.css" />
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     
   </head>
@@ -24,7 +28,7 @@
         ember-concurrency
 
         <span style="font-size: 0.5em;">
-          (v 3.1.1)
+          (<a id="ember521" class="ember-view" href="/docs/older-versions">v 4.0.2</a>)
         </span>
       </h3>
     </div>
@@ -46,12 +50,22 @@
     <div class="three columns">
       <div class="side-menu">
             <div class="toc-entry">
-                <a id="ember445" class="ember-view" href="/docs/introduction">Home</a>
+                <a id="ember522" class="ember-view" href="/docs/introduction">Home</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember446" class="ember-view" href="/docs/installation">Installation</a>
+                <a id="ember523" class="ember-view" href="/docs/installation">Installation</a>
+            </div>
+
+
+<!---->            <div class="toc-entry">
+                <a id="ember524" class="ember-view" href="/docs/v4-upgrade">Upgrading to V4</a>
+            </div>
+
+
+<!---->            <div class="toc-entry">
+                <a id="ember525" class="ember-view" href="/docs/older-versions">Older Version Docs</a>
             </div>
 
 
@@ -59,17 +73,17 @@
               Introduction
             </div>
             <div class="toc-entry">
-                <a id="ember447" class="ember-view" href="/docs/tutorial">Writing Code Without Tasks</a>
+                <a id="ember526" class="ember-view" href="/docs/tutorial">Writing Code Without Tasks</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember448" class="ember-view" href="/docs/tutorial/discussion">Post-Mortem</a>
+                <a id="ember527" class="ember-view" href="/docs/tutorial/discussion">Post-Mortem</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember449" class="ember-view" href="/docs/tutorial/refactor">Refactoring With Tasks</a>
+                <a id="ember528" class="ember-view" href="/docs/tutorial/refactor">Refactoring With Tasks</a>
             </div>
 
 
@@ -77,52 +91,52 @@
               Reference
             </div>
             <div class="toc-entry">
-                <a id="ember450" class="ember-view" href="/docs/task-function-syntax">Defining Tasks</a>
+                <a id="ember529" class="ember-view" href="/docs/task-function-syntax">Defining Tasks</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember451" class="ember-view" href="/docs/task-concurrency">Task Modifiers</a>
+                <a id="ember530" class="ember-view" href="/docs/task-concurrency">Task Modifiers</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember452" class="ember-view" href="/docs/cancelation">Cancellation</a>
+                <a id="ember531" class="ember-view" href="/docs/cancelation">Cancellation</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember453" class="ember-view" href="/docs/error-vs-cancelation">Handling Errors</a>
+                <a id="ember532" class="ember-view" href="/docs/error-vs-cancelation">Handling Errors</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember454" class="ember-view active" href="/docs/child-tasks">Child Tasks</a>
+                <a id="ember533" class="ember-view active" href="/docs/child-tasks">Child Tasks</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember455" class="ember-view" href="/docs/derived-state">Derived State</a>
+                <a id="ember534" class="ember-view" href="/docs/derived-state">Derived State</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember456" class="ember-view" href="/docs/events">Awaiting Events / Conditions</a>
+                <a id="ember535" class="ember-view" href="/docs/events">Awaiting Events / Conditions</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember457" class="ember-view" href="/docs/testing-debugging">Testing &amp; Debugging</a>
+                <a id="ember536" class="ember-view" href="/docs/testing-debugging">Testing &amp; Debugging</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember458" class="ember-view" href="/docs/typescript">TypeScript</a>
+                <a id="ember537" class="ember-view" href="/docs/typescript">TypeScript / Glint</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember459" class="ember-view" href="/docs/faq">FAQ &amp; Fact Sheet</a>
+                <a id="ember538" class="ember-view" href="/docs/faq">FAQ &amp; Fact Sheet</a>
             </div>
 
 
@@ -130,22 +144,22 @@
               Advanced
             </div>
             <div class="toc-entry">
-                <a id="ember460" class="ember-view" href="/docs/task-concurrency-advanced">Using maxConcurrency</a>
+                <a id="ember539" class="ember-view" href="/docs/task-concurrency-advanced">Using maxConcurrency</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember461" class="ember-view" href="/docs/advanced/lifecycle-events">Lifecycle Events</a>
+                <a id="ember540" class="ember-view" href="/docs/advanced/lifecycle-events">Lifecycle Events</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember462" class="ember-view" href="/docs/advanced/task-modifiers">Task Modifiers</a>
+                <a id="ember541" class="ember-view" href="/docs/advanced/task-modifiers">Task Modifiers</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember463" class="ember-view" href="/docs/advanced/yieldables">Yieldables / Controlling Execution</a>
+                <a id="ember542" class="ember-view" href="/docs/advanced/yieldables">Yieldables / Controlling Execution</a>
             </div>
 
 
@@ -153,32 +167,32 @@
               Examples
             </div>
             <div class="toc-entry">
-                <a id="ember464" class="ember-view" href="/docs/examples/loading-ui">Loading UI</a>
+                <a id="ember543" class="ember-view" href="/docs/examples/loading-ui">Loading UI</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember465" class="ember-view" href="/docs/examples/autocomplete">Type-Ahead Search</a>
+                <a id="ember544" class="ember-view" href="/docs/examples/autocomplete">Type-Ahead Search</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember466" class="ember-view" href="/docs/examples/increment-buttons">Accelerating Increment Buttons</a>
+                <a id="ember545" class="ember-view" href="/docs/examples/increment-buttons">Accelerating Increment Buttons</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember467" class="ember-view" href="/docs/examples/ajax-throttling">AJAX Throttling</a>
+                <a id="ember546" class="ember-view" href="/docs/examples/ajax-throttling">AJAX Throttling</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember468" class="ember-view" href="/docs/examples/route-tasks">Route Tasks</a>
+                <a id="ember547" class="ember-view" href="/docs/examples/route-tasks">Route Tasks</a>
             </div>
 
 
 <!---->            <div class="toc-entry">
-                <a id="ember469" class="ember-view" href="/docs/examples/joining-tasks">Awaiting Multiple Child Tasks</a>
+                <a id="ember548" class="ember-view" href="/docs/examples/joining-tasks">Awaiting Multiple Child Tasks</a>
             </div>
 
 
@@ -187,15 +201,15 @@
     <div class="nine columns">
       <div class="row">
     <p class="u-pull-left">
-      Previous: <a id="ember470" class="ember-view" href="/docs/error-vs-cancelation">Handling Errors</a>
+      Previous: <a id="ember549" class="ember-view" href="/docs/error-vs-cancelation">Handling Errors</a>
     </p>
 
     <p class="u-pull-right">
-      Next: <a id="ember471" class="ember-view" href="/docs/derived-state">Derived State</a>
+      Next: <a id="ember550" class="ember-view" href="/docs/derived-state">Derived State</a>
     </p>
 </div>
 
-      <a class="github-edit" href="https://github.com/machty/ember-concurrency/edit/master/tests/dummy/app/docs/child-tasks/template.hbs" title="Edit on GitHub">
+      <a class="github-edit" href="https://github.com/machty/ember-concurrency/edit/master/packages/test-app/app/docs/child-tasks/template.hbs" title="Edit on GitHub">
   <i class="icon-pencil"></i>
 </a>
 
@@ -203,11 +217,11 @@
       <h3>Child Tasks</h3>
 
 <p>
-  Tasks can call other tasks by <code>await</code>ing the
-  result of <code>anotherTask.perform()</code>. When this happens,
-  the Parent task will wait for the Child task to complete before
-  proceeding. If the Parent task is canceled, the Child task will
-  automatically be canceled as well.
+  Tasks can call other tasks by
+  <code>await</code>ing the result of
+  <code>anotherTask.perform()</code>. When this happens, the Parent task will
+  wait for the Child task to complete before proceeding. If the Parent task is
+  canceled, the Child task will automatically be canceled as well.
 </p>
 
 <h4>Example</h4>
@@ -215,8 +229,8 @@
 <h5>Waiting to start</h5>
 
 <ul>
-  <li>Parent Task:     idle</li>
-  <li>Child Task:      idle</li>
+  <li>Parent Task: idle</li>
+  <li>Child Task: idle</li>
   <li>Grandchild Task: idle</li>
 </ul>
 
@@ -224,19 +238,22 @@
     Perform Parent Task
 </button>
 
-<pre class="language-javascript "><code class="code-snippet language-javascript"></code></pre>
-<pre class="language-markup "><code class="code-snippet language-markup"></code></pre>
 
+    <pre class="language-javascript "><code class="code-snippet language-javascript"></code></pre>
+  
+
+    <pre class="language-markup "><code class="code-snippet language-markup"></code></pre>
+  
 
       <br> <br> <br> <br>
 
       <div class="row">
     <p class="u-pull-left">
-      Previous: <a id="ember472" class="ember-view" href="/docs/error-vs-cancelation">Handling Errors</a>
+      Previous: <a id="ember551" class="ember-view" href="/docs/error-vs-cancelation">Handling Errors</a>
     </p>
 
     <p class="u-pull-right">
-      Next: <a id="ember473" class="ember-view" href="/docs/derived-state">Derived State</a>
+      Next: <a id="ember552" class="ember-view" href="/docs/derived-state">Derived State</a>
     </p>
 </div>
 
@@ -249,10 +266,9 @@
 <!----></div>
 <script type="x/boundary" id="fastboot-body-end"></script>
 
-    <script src="/assets/vendor-5680f365dee814ee5778351211d2f525.js"></script>
-<script src="/assets/chunk.615.7a816481c9a64793d050.js"></script>
-<script src="/assets/chunk.143.a1f2c3760c4d791982bd.js"></script>
-    <script src="/assets/dummy-fa096eaf5b42ae26bab5efe13e004bc5.js"></script>
+    <script src="/assets/vendor-89a69b6c8ac133b27299f8b8bd94decf.js"></script>
+<script src="/assets/chunk.524.b9226b08d7450ff0043a.js"></script>
+    <script src="/assets/test-app-8e2b8757041f79cec402a63c32d74c5f.js"></script>
 
     
   </body>
