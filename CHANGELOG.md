@@ -1,5 +1,9 @@
 # Changelog
 
+### 5.2.0
+
+- Fix compatibility with ember-cli-code-coverage (#604)
+
 ### 5.1.0
 
 - The EC Babel async arrow function transformer now prunes imports that become unused after applying the transform so that Rollup doesn't complain about unused imports. (#595)
